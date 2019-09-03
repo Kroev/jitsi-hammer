@@ -707,7 +707,8 @@ public class FakeUser implements StanzaListener
         contentMap.remove("data");
 
 
-        IceMediaStreamGenerator iceMediaStreamGenerator = IceMediaStreamGenerator.getInstance();
+        //IceMediaStreamGenerator iceMediaStreamGenerator = IceMediaStreamGenerator.getInstance();
+        IceMediaStreamGenerator iceMediaStreamGenerator = new IceMediaStreamGenerator(6000, 9000);
 
         try
         {
